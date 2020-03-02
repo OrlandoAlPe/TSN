@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-class EmilianoZapata extends StatelessWidget {
+class PorfirioDiaz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Emiliano Zapata'),
+          title: const Text('Porfirio Diaz'),
         ),
         body: Container(
           child: Column(
             children: <Widget>[
-              Text('Emiliano Zapata'),
+              Text('Porfirio Diaz'),
               Row(
                 children: <Widget>[
                   Container(

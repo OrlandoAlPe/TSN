@@ -1,66 +1,88 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:tsnf/Cronologia/Linea_de_tiempo.dart';
-import 'package:tsnf/Eventos/Menu_eventos.dart';
-import 'Personajes/Menu_personajes.dart';
+import 'navegacion.dart';
 
 class MenuPrincipal extends StatelessWidget {
-  void apersonajes(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return MenuPersonajes();
-        },
-      ),
-    );
-  }
-  void aeventos(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return MenuEventos();
-        },
-      ),
-    );
-  }
-  void alineadeltiempo(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return LineaDeTiempo();
-        },
-      ),
-    );
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Menu principal')),
-      body: Center(
+      appBar: AppBar(title: const Text('Menu principal')),
+      body: SingleChildScrollView( 
         child: Column(
-          children: <Widget>[
-            RaisedButton(
-                child: Text('Personajes'),
-                color: Colors.indigo,
-                textColor: Colors.white,
-                onPressed: () => apersonajes(context)),
-            RaisedButton(
-                child: Text('Eventos'),
-                color: Colors.indigo,
-                textColor: Colors.white,
-                onPressed: ()=>aeventos(context)),
-            RaisedButton(
-                child: Text('Linea del tiempo'),
-                color: Colors.indigo,
-                textColor: Colors.white,
-                onPressed: ()=>alineadeltiempo(context)),
-            RaisedButton(
-                child: Text('Salir'),
-                color: Colors.indigo,
-                textColor: Colors.white,
-                onPressed: () => exit(1))
-          ],
-        ),
+            children: <Widget>[
+              Container(
+                height: (MediaQuery.of(context).size.height )* 0.3,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Icon(
+                      Icons.supervised_user_circle,
+                      color: Colors.indigo,
+                      size: 50,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.75,
+                      height: MediaQuery.of(context).size.height * 0.07,
+                      child: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(15)),
+                          child: Text('Personajes'),
+                          color: Colors.indigoAccent,
+                          textColor: Colors.white,
+                          onPressed: () => apersonajes(context)),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.3,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Icon(
+                      Icons.event_note,
+                      color: Colors.indigo,
+                      size: 50,
+                    ),
+                    SizedBox(
+                       width: MediaQuery.of(context).size.width * 0.75,
+                      height: MediaQuery.of(context).size.height * 0.07,
+                      child: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(15)),
+                          child: Text('Eventos'),
+                          color: Colors.indigoAccent,
+                          textColor: Colors.white,
+                          onPressed: () => aeventos(context)),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: (MediaQuery.of(context).size.height) * 0.3,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Icon(
+                      Icons.line_weight,
+                      color: Colors.indigo,
+                      size: 50,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.75,
+                      height: MediaQuery.of(context).size.height * 0.07,
+                      child: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(15)),
+                          child: Text('Linea del tiempo'),
+                          color: Colors.indigoAccent,
+                          textColor: Colors.white,
+                          onPressed: () => alineadeltiempo(context)),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
       ),
     );
   }

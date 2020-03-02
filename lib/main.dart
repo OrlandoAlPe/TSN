@@ -7,9 +7,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Final',
+      title: 'Guia',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
+        accentColor: Colors.indigoAccent,
+        
       ),
       home: MenuPrincipal(),
     );

@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tsnf/Eventos/Plan_SanLuis.dart';
-
+import 'package:tsnf/navegacion.dart';
 class MenuEventos extends StatelessWidget {
-  void pSanLuis(BuildContext ctx) {
-    Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return PlanSanLuis();
-    }));
-  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
