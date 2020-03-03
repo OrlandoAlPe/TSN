@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tsnf/Eventos/Constitucion_1917.dart';
+import 'package:tsnf/Eventos/Convencion_de_Aguascalientes.dart';
+import 'package:tsnf/Eventos/Decena_Tragica.dart';
+import 'package:tsnf/Eventos/Plan_Ayala.dart';
+import 'package:tsnf/Eventos/Plan_Guadalupe.dart';
 import 'package:tsnf/Personajes/Fracisco_VIlla.dart';
 import 'package:tsnf/Personajes/Francisco_I_Madero.dart';
 import 'package:tsnf/Personajes/Porfirio_Diaz.dart';
@@ -72,8 +77,34 @@ void vcarranza(BuildContext ctx) {
 }
 
 /*NAVEGACION EVENTOS*/
-void pSanLuis(BuildContext ctx) {
+void psanluis(BuildContext ctx) {
   Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
     return PlanSanLuis();
+  }));
+}
+
+void payala(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return PlanAyala();
+  }));
+}
+void pguadalupe(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return PlanGuadalupe();
+  }));
+}
+void convags(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return ConvencionAguascalientes();
+  }));
+}
+void dectragica(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return Decenatragica();
+  }));
+}
+void const1917(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return Constitucion1917();
   }));
 }

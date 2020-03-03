@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-class PlanSanLuis extends StatelessWidget {
+class PlanAyala extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:const Text('Plan de San Luis'),
+      appBar: AppBar(title:const Text('Plan de Ayala'),
       ),
       body: Container(
           child: Column(
             children: <Widget>[
-              Text('Plan de San Luis'),
+              Text('Plan de Ayala'),
               Row(
                 children: <Widget>[
                   Container(
