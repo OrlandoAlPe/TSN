@@ -17,8 +17,8 @@ class MenuPersonajes extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Icon(
-                        Icons.person_pin,
-                        color: Colors.indigo,
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
                         size: 50,
                       ),
                       SizedBox(
@@ -28,7 +28,7 @@ class MenuPersonajes extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(15)),
                             child: Text('Emiliano Zapata'),
-                            color: Colors.indigoAccent,
+                            color: Theme.of(context).accentColor,
                             textColor: Colors.white,
                             onPressed: () => ezapata(context)),
                       )
@@ -41,8 +41,8 @@ class MenuPersonajes extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Icon(
-                        Icons.person_pin,
-                        color: Colors.indigo,
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
                         size: 50,
                       ),
                       SizedBox(
@@ -52,7 +52,7 @@ class MenuPersonajes extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(15)),
                             child: Text(' Francisco Villa'),
-                            color: Colors.indigoAccent,
+                            color: Theme.of(context).accentColor,
                             textColor: Colors.white,
                             onPressed: () => fvilla(context)),
                       )
@@ -65,8 +65,8 @@ class MenuPersonajes extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Icon(
-                        Icons.person_pin,
-                        color: Colors.indigo,
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
                         size: 50,
                       ),
                       SizedBox(
@@ -76,7 +76,7 @@ class MenuPersonajes extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(15)),
                             child: Text('Francisco I. Madero'),
-                            color: Colors.indigoAccent,
+                            color: Theme.of(context).accentColor,
                             textColor: Colors.white,
                             onPressed: () => fimadero(context)),
                       )
@@ -89,8 +89,8 @@ class MenuPersonajes extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Icon(
-                        Icons.person_pin,
-                        color: Colors.indigo,
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
                         size: 50,
                       ),
                       SizedBox(
@@ -100,7 +100,7 @@ class MenuPersonajes extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(15)),
                             child: Text('Porfirio Diaz'),
-                            color: Colors.indigoAccent,
+                            color: Theme.of(context).accentColor,
                             textColor: Colors.white,
                             onPressed: () => pdiaz(context)),
                       )
@@ -113,8 +113,8 @@ class MenuPersonajes extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Icon(
-                        Icons.person_pin,
-                        color: Colors.indigo,
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
                         size: 50,
                       ),
                       SizedBox(
@@ -124,7 +124,7 @@ class MenuPersonajes extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(15)),
                             child: Text('Venustiano Carranza'),
-                            color: Colors.indigoAccent,
+                            color: Theme.of(context).accentColor,
                             textColor: Colors.white,
                             onPressed: () => vcarranza(context)),
                       )
@@ -137,8 +137,8 @@ class MenuPersonajes extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Icon(
-                        Icons.person_pin,
-                        color: Colors.indigo,
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
                         size: 50,
                       ),
                       SizedBox(
@@ -148,7 +148,7 @@ class MenuPersonajes extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: new BorderRadius.circular(15)),
                             child: Text('Victoriano Huerta'),
-                            color: Colors.indigoAccent,
+                            color: Theme.of(context).accentColor,
                             textColor: Colors.white,
                             onPressed: () => vhuerta(context)),
                       )

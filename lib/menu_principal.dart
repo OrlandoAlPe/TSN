@@ -9,14 +9,14 @@ class MenuPrincipal extends StatelessWidget {
       body: SingleChildScrollView( 
         child: Column(
             children: <Widget>[
-              Container(
+              Container(/*Conceptos Basicos*/ 
                 height: (MediaQuery.of(context).size.height )* 0.3,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Icon(
-                      Icons.supervised_user_circle,
-                      color: Colors.indigo,
+                      Icons.stars,
+                      color: Theme.of(context).primaryColor,
                       size: 50,
                     ),
                     SizedBox(
@@ -25,22 +25,22 @@ class MenuPrincipal extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Personajes'),
-                          color: Colors.indigoAccent,
+                          child: Text('Conceptos Básicos'),
+                          color: Theme.of(context).accentColor,
                           textColor: Colors.white,
-                          onPressed: () => apersonajes(context)),
+                          onPressed: () => aconceptos(context)),
                     )
                   ],
                 ),
               ),
-              Container(
+              Container(/* Personajes */
                 height: MediaQuery.of(context).size.height * 0.3,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Icon(
-                      Icons.event_note,
-                      color: Colors.indigo,
+                      Icons.supervised_user_circle,
+                      color: Theme.of(context).primaryColor,
                       size: 50,
                     ),
                     SizedBox(
@@ -49,22 +49,22 @@ class MenuPrincipal extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Eventos'),
-                          color: Colors.indigoAccent,
+                          child: Text('Personajes Principales'),
+                          color: Theme.of(context).accentColor,
                           textColor: Colors.white,
-                          onPressed: () => aeventos(context)),
+                          onPressed: () => apersonajes(context)),
                     )
                   ],
                 ),
               ),
-              Container(
+              Container(/* Linea del tiempo */
                 height: (MediaQuery.of(context).size.height) * 0.3,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Icon(
                       Icons.line_weight,
-                      color: Colors.indigo,
+                      color: Theme.of(context).primaryColor,
                       size: 50,
                     ),
                     SizedBox(
@@ -74,7 +74,7 @@ class MenuPrincipal extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
                           child: Text('Linea del tiempo'),
-                          color: Colors.indigoAccent,
+                          color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => alineadeltiempo(context)),
                     )

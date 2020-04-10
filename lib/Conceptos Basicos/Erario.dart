@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-class ConvencionAguascalientes extends StatelessWidget {
+class Erario extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:const Text('Convención de Aguascalientes'),
-      ),
-      body: Container(
+        appBar: AppBar(
+          title: const Text('Erario'),
+        ),
+        body: Container(
           child: Column(
             children: <Widget>[
-              Text('Convención de Aguascalientes'),
+              Text('Insert'),
               Row(
                 children: <Widget>[
                   Container(
@@ -24,7 +25,6 @@ class ConvencionAguascalientes extends StatelessWidget {
               Text('Insert'),
             ],
           ),
-        )
-      );
+        ));
   }
 }

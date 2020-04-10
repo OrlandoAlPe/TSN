@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class FranciscoVilla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,17 +10,32 @@ class FranciscoVilla extends StatelessWidget {
         body: Container(
           child: Column(
             children: <Widget>[
-              Text('Francisco Villa'),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                child: Text(
+                  'Francisco Villa',
+                  style: TextStyle(fontSize: 25),
+                ),
+              ),
               Row(
                 children: <Widget>[
-                  Container(
-                    height: 200,
-                    child: Image.asset(
-                      'images/EmilianoZapata/Emiliano_Zapata.jpg',
-                      fit: BoxFit.cover,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: (MediaQuery.of(context).size.height) * 0.33,
+                      child: Image.asset(
+                        'images/EmilianoZapata/Emiliano_Zapata.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-                  Flexible(child: Text('Insert'))
+                  Flexible(
+                      child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: Text(
+                      'Su verdadero nombre fue Doroteo Arango Arámbula y cuando combatió en la Revolución Mexicana fue apodado como "Centauro del Norte". Nació el 5 de junio de 1876, en Durango (México). Sus padres fueron Agustín Arango y Micaela Arámbula.',
+                    ),
+                  ))
                 ],
               ),
               Text('Insert'),

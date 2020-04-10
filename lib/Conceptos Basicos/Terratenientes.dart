@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-class PlanSanLuis extends StatelessWidget {
+class Terratenientes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:const Text('Plan de San Luis'),
-      ),
-      body: Container(
+        appBar: AppBar(
+          title: const Text('Terratenientes'),
+        ),
+        body: Container(
           child: Column(
             children: <Widget>[
-              Text('Plan de San Luis'),
+              Text('Insert'),
               Row(
                 children: <Widget>[
                   Container(
@@ -24,7 +25,6 @@ class PlanSanLuis extends StatelessWidget {
               Text('Insert'),
             ],
           ),
-        )
-      );
+        ));
   }
 }

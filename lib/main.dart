@@ -9,9 +9,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Guia',
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
-        accentColor: Colors.indigoAccent,
-        
+        primarySwatch: Colors.blueGrey,
+        accentColor: Colors.blueGrey,
+        fontFamily: 'GentiumBookBasic',
+        appBarTheme: AppBarTheme(
+          textTheme: ThemeData.light().textTheme.copyWith(
+            title: TextStyle(
+              fontFamily: 'GentiumBookBasic',
+              fontSize:20,
+              fontWeight: FontWeight.bold,
+            )
+          )
+        )
       ),
       home: MenuPrincipal(),
     );
