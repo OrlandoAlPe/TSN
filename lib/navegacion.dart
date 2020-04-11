@@ -4,6 +4,7 @@ import 'package:tsnf/Conceptos%20Basicos/Menu_Conceptos.dart';
 import 'package:tsnf/Conceptos%20Basicos/Porfiriato.dart';
 import 'package:tsnf/Conceptos%20Basicos/Revolucion.dart';
 import 'package:tsnf/Conceptos%20Basicos/Terratenientes.dart';
+import 'package:tsnf/Personajes/Alvaro_Obregon.dart';
 import 'package:tsnf/Personajes/Fracisco_VIlla.dart';
 import 'package:tsnf/Personajes/Francisco_I_Madero.dart';
 import 'package:tsnf/Personajes/Porfirio_Diaz.dart';
@@ -93,6 +94,12 @@ void vhuerta(BuildContext ctx) {
 void vcarranza(BuildContext ctx) {
   Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
     return VenustianoCarranza();
+  }));
+}
+
+void aobregon(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return AlvaroObregon();
   }));
 }
 

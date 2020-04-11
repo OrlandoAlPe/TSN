@@ -155,6 +155,30 @@ class MenuPersonajes extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(
+                  height: (MediaQuery.of(context).size.height )* 0.12,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Icon(
+                        Icons.face,
+                        color: Theme.of(context).primaryColor,
+                        size: 50,
+                      ),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.75,
+                        height: MediaQuery.of(context).size.height * 0.07,
+                        child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(15)),
+                            child: Text('Álvaro Obregón'),
+                            color: Theme.of(context).accentColor,
+                            textColor: Colors.white,
+                            onPressed: () => aobregon(context)),
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
         ));

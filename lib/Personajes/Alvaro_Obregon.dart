@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-class VictorianoHuerta extends StatelessWidget {
+class AlvaroObregon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class VictorianoHuerta extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: Text(
-                    'Victoriano Huerta',
+                    'Alvaro Obregon',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
@@ -24,7 +24,7 @@ class VictorianoHuerta extends StatelessWidget {
                         height: (MediaQuery.of(context).size.height) * 0.33,
                         width: (MediaQuery.of(context).size.width) * 0.40,
                         child: Image.asset(
-                          'images/Personajes/Huerta.jpg',
+                          'images/Personajes/Obregon.jpg',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -33,10 +33,12 @@ class VictorianoHuerta extends StatelessWidget {
                         child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
-                        '''Victoriano Huerta nació en Jalisco el 23 de marzo de 1845. Estudió ingeniería en Colegio Militar. Luchó contra los indígenas en Sonora y Yucatán. Desde 1907 fue jefe de Obras Públicas en Monterrey.
+                        '''
+Álvaro Obregón Salido nació el 19 de febrero de 1880, en Sonora (México). Estudió y trabajó en su pueblo donde llegó a comprar una finca.
 
-En 1911 Francisco I. Madero lo nombró jefe de las tropas federales. Sin embargo, en 1913 lo traicionó y mandó asesinar. Se autoproclamó Presidente e inició una dictadura. En julio de 1914 fue derrocado por Venustiano Carranza.
-''',
+Cuando estalló la Revolución Mexicana en 1910, Obregón apoyó a Francisco Madero. En 1913, Madero fue asesinado y Obregón se unió a Venustiano Carranza para combatir a Victoriano Huerta.
+
+En 1914, Obregón derrotó a Pancho Villa y fue nombrado Ministro de Guerra por Carranza.''',
                         style: TextStyle(fontSize: 14),
                       ),
                     ))
@@ -45,7 +47,9 @@ En 1911 Francisco I. Madero lo nombró jefe de las tropas federales. Sin embargo
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    '''Se exilió en Barcelona, pero en 1915 viajó a EE.UU. ahí falleció por una cirrosis el 13 de enero de 1916.
+                    '''Entre 1920 y 1924 fue Presidente de México. Su gobierno continuó la pacificación del país e inició el reparto de tierras.
+
+En 1924 terminó su periodo y se retiró a Sonora. En 1928 postuló y ganó la presidencia nuevamente. Pero antes de asumir el mando, un fanático católico lo asesinó a balazos en un restaurante de Ciudad de México.
 ''',
                     style: TextStyle(fontSize: 14),
                   ),

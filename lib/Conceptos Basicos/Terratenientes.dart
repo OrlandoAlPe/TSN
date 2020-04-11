@@ -6,25 +6,47 @@ class Terratenientes extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Terratenientes'),
         ),
-        body: Container(
-          child: Column(
-            children: <Widget>[
-              Text('Insert'),
-              Row(
-                children: <Widget>[
-                  Container(
-                    height: 200,
-                    child: Image.asset(
-                      'images/EmilianoZapata/Emiliano_Zapata.jpg',
-                      fit: BoxFit.cover,
-                    ),
+        body: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Text(
+                    'NOMBRE',
+                    style: TextStyle(fontSize: 25),
                   ),
-                  Flexible(child: Text('Insert'))
-                ],
-              ),
-              Text('Insert'),
-            ],
-          ),
-        ));
+                ),
+                Row(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: (MediaQuery.of(context).size.height) * 0.33,
+                        child: Image.asset(
+                          'images/Personajes/',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Flexible(
+                        child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Text(
+                        '''TEXTO''',
+                        style: TextStyle(fontSize: 14),
+                      ),
+                    ))
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    '''TEXTO''',
+                    style: TextStyle(fontSize: 14),
+                  ),
+                ),
+              ],
+            ),
+          ));
   }
 }
