@@ -23,7 +23,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-
+  chewie: ^0.9.10
+  video_player: ^0.10.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -49,6 +50,14 @@ flutter:
      - images/Personajes/Carranza.jpg
      - images/Personajes/Huerta.jpg
      - images/Personajes/Obregon.jpg
+     - images/Personajes/pascual.jpg
+     - images/Conceptos/golpedestado.jpg
+     - images/Conceptos/porfiriato.jpg
+     - images/Conceptos/revolucion.jpg
+     - images/Conceptos/terrateniente.jpg
+     - videos/zapata.mp4
+     - videos/porfirio.mp4
+     - videos/carranza.mp4
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

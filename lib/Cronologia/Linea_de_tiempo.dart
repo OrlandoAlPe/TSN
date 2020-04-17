@@ -1,36 +1,37 @@
 import 'package:flutter/material.dart';
-import 'evento.dart';
 
 class LineaDeTiempo extends StatelessWidget {
-  final List<Evento> eventos = [
-    Evento(fecha: 'a', acontecimiento: '1', descripcion: 'a'),
-    Evento(fecha: 'e', acontecimiento: '2', descripcion: 'b'),
-    Evento(fecha: 'i', acontecimiento: '3', descripcion: 'c'),
-    Evento(fecha: 'o', acontecimiento: '4', descripcion: 'd'),
-    Evento(fecha: 'u', acontecimiento: '5', descripcion: 'e')
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cronologia'),
-      ),
-      body: Center(
-        child: ListWheelScrollView(
-        itemExtent: 100,
-          children: eventos.map((ev) => Card(
-                    child: Container(
-                      //padding: EdgeInsets.all(5),
-                      child:Text(ev.fecha + ev.acontecimiento + ev.descripcion),
-                    ),
-                  ))
-              .toList()
+        appBar: AppBar(
+          title: const Text('Cronologia'),
         ),
-      ),
-    );
+        body: ListView(
+          scrollDirection: Axis.horizontal,
+          padding: EdgeInsets.all(8.0),
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Container(
+                width: (MediaQuery.of(context).size.width) * 0.25,
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        Icon( Icons.star,color: Colors.white, size: 20,),
+                        Text( 'fecha',style: TextStyle(color: Colors.white)),
+                        Text('Evento', style: TextStyle(color: Colors.white)),
+                        Text('Descripcion', style: TextStyle(color: Colors.white))
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ));
   }
 }
-/*(Column(children:eventos.map((ev){
-          return Card(child: Text(ev.fecha + ev.acontecimiento + ev.descripcion ),);
-        }).toList() )*/

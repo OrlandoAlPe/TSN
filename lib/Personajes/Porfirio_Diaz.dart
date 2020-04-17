@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tsnf/video_itemlist.dart';
+import 'package:video_player/video_player.dart';
 class PorfirioDiaz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -52,6 +54,17 @@ En 1910 se reeligió después de encarcelar al candidato opositor Francisco Made
                     style: TextStyle(fontSize: 14),
                   ),
                 ),
+                 Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                ' PORFIRIO DIAZ; ¿HÉROE O VILLANO?',
+                style: TextStyle(fontSize: 14),
+              ),
+            ),
+                ChewieListitem(videoPlayerController: VideoPlayerController.asset(
+                  'videos/porfirio.mp4',
+                ),
+                )
               ],
             ),
           ));

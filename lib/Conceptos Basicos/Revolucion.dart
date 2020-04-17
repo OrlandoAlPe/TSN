@@ -12,7 +12,7 @@ class Revolucion extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: Text(
-                    'NOMBRE',
+                    'Revolución',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),
@@ -23,7 +23,7 @@ class Revolucion extends StatelessWidget {
                       child: Container(
                         height: (MediaQuery.of(context).size.height) * 0.33,
                         child: Image.asset(
-                          'images/Personajes/',
+                          'images/Conceptos/revolucion.jpg',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -32,7 +32,7 @@ class Revolucion extends StatelessWidget {
                         child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
-                        '''TEXTO''',
+                        '''La revolución es un cambio o transformación radical respecto al pasado inmediato, que se puede producir simultáneamente en distintos ámbitos (social, económico, cultural, religioso, etc.). ''',
                         style: TextStyle(fontSize: 14),
                       ),
                     ))
@@ -41,7 +41,7 @@ class Revolucion extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    '''TEXTO''',
+                    '''Los cambios revolucionarios tienen consecuencias trascendentales y suelen percibirse como súbitos y violentos, ya que se trata de una ruptura del orden establecido. Las revoluciones nacen como consecuencia de procesos históricos y de construcciones colectivas.''',
                     style: TextStyle(fontSize: 14),
                   ),
                 ),

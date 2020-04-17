@@ -4,7 +4,7 @@ class AlvaroObregon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Victoriano Huerta'),
+          title: const Text('Álvaro Obregón'),
         ),
         body: SingleChildScrollView(
             child: Column(
@@ -12,7 +12,7 @@ class AlvaroObregon extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: Text(
-                    'Alvaro Obregon',
+                    'Álvaro Obregón',
                     style: TextStyle(fontSize: 25),
                   ),
                 ),

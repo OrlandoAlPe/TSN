@@ -5,7 +5,7 @@ class MenuPrincipal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Menu principal')),
+      appBar: AppBar(title: const Text('Menú principal',)),
       body: SingleChildScrollView( 
         child: Column(
             children: <Widget>[
@@ -25,7 +25,7 @@ class MenuPrincipal extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Conceptos Básicos'),
+                          child: Text('Conceptos Básicos',style: TextStyle(fontSize: 22),),
                           color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => aconceptos(context)),
@@ -49,7 +49,7 @@ class MenuPrincipal extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Personajes Principales'),
+                          child: Text('Personajes Principales',style: TextStyle(fontSize: 22)),
                           color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => apersonajes(context)),
@@ -73,7 +73,7 @@ class MenuPrincipal extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Linea del tiempo'),
+                          child: Text('Linea del tiempo',style: TextStyle(fontSize: 22)),
                           color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => alineadeltiempo(context)),

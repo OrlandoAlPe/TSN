@@ -25,31 +25,7 @@ class MenuConceptos extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Erario'),
-                          color: Theme.of(context).accentColor,
-                          textColor: Colors.white,
-                          onPressed: () => erario(context)),
-                    )
-                  ],
-                ),
-              ),
-              Container(
-                height: (MediaQuery.of(context).size.height) * 0.12,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Icon(
-                      Icons.star,
-                      color: Theme.of(context).primaryColor,
-                      size: 50,
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.75,
-                      height: MediaQuery.of(context).size.height * 0.07,
-                      child: RaisedButton(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Porfiriato'),
+                          child: Text('Porfiriato',style: TextStyle(fontSize: 22)),
                           color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => porfiriato(context)),
@@ -73,7 +49,7 @@ class MenuConceptos extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Terratenientes'),
+                          child: Text('Terratenientes',style: TextStyle(fontSize: 22)),
                           color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => terrateniente(context)),
@@ -97,10 +73,34 @@ class MenuConceptos extends StatelessWidget {
                       child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: new BorderRadius.circular(15)),
-                          child: Text('Revolucion'),
+                          child: Text('Revolucion',style: TextStyle(fontSize: 22)),
                           color: Theme.of(context).accentColor,
                           textColor: Colors.white,
                           onPressed: () => revolucion(context)),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: (MediaQuery.of(context).size.height) * 0.12,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Icon(
+                      Icons.star,
+                      color: Theme.of(context).primaryColor,
+                      size: 50,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.75,
+                      height: MediaQuery.of(context).size.height * 0.07,
+                      child: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(15)),
+                          child: Text('Golpe de estado',style: TextStyle(fontSize: 22)),
+                          color: Theme.of(context).accentColor,
+                          textColor: Colors.white,
+                          onPressed: () => golpedestado(context)),
                     )
                   ],
                 ),

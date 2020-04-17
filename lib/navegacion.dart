@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tsnf/Conceptos%20Basicos/Erario.dart';
+import 'package:tsnf/Conceptos%20Basicos/Golpe_De_estado.dart';
 import 'package:tsnf/Conceptos%20Basicos/Menu_Conceptos.dart';
 import 'package:tsnf/Conceptos%20Basicos/Porfiriato.dart';
 import 'package:tsnf/Conceptos%20Basicos/Revolucion.dart';
@@ -7,6 +7,7 @@ import 'package:tsnf/Conceptos%20Basicos/Terratenientes.dart';
 import 'package:tsnf/Personajes/Alvaro_Obregon.dart';
 import 'package:tsnf/Personajes/Fracisco_VIlla.dart';
 import 'package:tsnf/Personajes/Francisco_I_Madero.dart';
+import 'package:tsnf/Personajes/Pascual_Orozco.dart';
 import 'package:tsnf/Personajes/Porfirio_Diaz.dart';
 import 'package:tsnf/Personajes/Venustiano_Carranza.dart';
 import 'package:tsnf/Personajes/Victoriano_Huerta.dart';
@@ -48,15 +49,16 @@ void porfiriato(BuildContext ctx) {
     return Porfiriato();
   }));
 }
-void erario(BuildContext ctx) {
-  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-    return Erario();
-  }));
-}
 
 void terrateniente(BuildContext ctx) {
   Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
     return Terratenientes();
+  }));
+}
+
+void golpedestado(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return GolpeDeEstado();
   }));
 }
 
@@ -102,4 +104,12 @@ void aobregon(BuildContext ctx) {
     return AlvaroObregon();
   }));
 }
+
+void porozco(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return PascualOrozco();
+  }));
+}
+
+
 
