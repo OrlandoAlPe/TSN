@@ -4,6 +4,7 @@ import 'package:tsnf/Conceptos%20Basicos/Menu_Conceptos.dart';
 import 'package:tsnf/Conceptos%20Basicos/Porfiriato.dart';
 import 'package:tsnf/Conceptos%20Basicos/Revolucion.dart';
 import 'package:tsnf/Conceptos%20Basicos/Terratenientes.dart';
+import 'package:tsnf/Cronologia/videoencorto.dart';
 import 'package:tsnf/Personajes/Alvaro_Obregon.dart';
 import 'package:tsnf/Personajes/Fracisco_VIlla.dart';
 import 'package:tsnf/Personajes/Francisco_I_Madero.dart';
@@ -111,5 +112,10 @@ void porozco(BuildContext ctx) {
   }));
 }
 
+/* Linea del tiempo */
 
-
+void avideo(BuildContext ctx) {
+  Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
+    return Videocorto();
+  }));
+}

@@ -51,13 +51,43 @@ flutter:
      - images/Personajes/Huerta.jpg
      - images/Personajes/Obregon.jpg
      - images/Personajes/pascual.jpg
+     - images/Personajes/aomanco.jpg
      - images/Conceptos/golpedestado.jpg
      - images/Conceptos/porfiriato.jpg
      - images/Conceptos/revolucion.jpg
      - images/Conceptos/terrateniente.jpg
+     - images/Conceptos/golpe2.jpg
+     - images/Conceptos/porfiria2.jpg
+     - images/Conceptos/revo2.jpg
+     - images/Conceptos/terra2.jpg
+     - images/Cronologia/1917.jpg
+     - images/Cronologia/cananea.jpg
+     - images/Cronologia/carranpresi.jpg
+     - images/Cronologia/convags.jpg
+     - images/Cronologia/entrevistadiaz.jpg
+     - images/Cronologia/eulaguti.jpg
+     - images/Cronologia/exiliopd.jpg
+     - images/Cronologia/fcocarba.jpg
+     - images/Cronologia/fcoleondlb.jpg
+     - images/Cronologia/fimmuerte.jpg
+     - images/Cronologia/fimpresi.jpg
+     - images/Cronologia/libroFIM.jpg
+     - images/Cronologia/plansl.jpg
+     - images/Cronologia/plasc.jpg
+     - images/Cronologia/pvillacol.jpg
+     - images/Cronologia/revmex.jpg
+     - images/Cronologia/rioblanco.jpg
+     - images/Cronologia/tiosam.jpg
+     - images/Cronologia/tomacdj.jpg
+     - images/Cronologia/tyl.jpg
+     - images/Cronologia/zapatagente.jpg
      - videos/zapata.mp4
      - videos/porfirio.mp4
      - videos/carranza.mp4
+     - videos/villa.mp4
+     - videos/huerta.mp4
+     - videos/corto.mp4
+     - videos/madero.mp4
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -78,7 +108,11 @@ flutter:
         - asset: fonts/GentiumBookBasic-Italic.ttf
           style: italic
         - asset: fonts/GentiumBookBasic-Bold.ttf
-          weight: 700  
+          weight: 700
+    - family: SpecialElite
+      fonts:
+        - asset: fonts/SpecialElite-Regular.ttf
+          weight: 700
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

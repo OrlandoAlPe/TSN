@@ -9,19 +9,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Guia',
       theme: ThemeData(
-        primaryColor: Colors.red[900],
-        accentColor: Colors.red[800],
-        fontFamily: 'GentiumBookBasic',
+        primaryColor: Color.fromARGB(255, 138, 71, 66),
+        accentColor: Color.fromARGB(255, 145, 88, 85),
+        cardColor: Color.fromARGB(255, 145, 88, 85),
+        dialogBackgroundColor: Color.fromARGB(255, 227, 206, 181),
+        fontFamily: 'SpecialElite',
         appBarTheme: AppBarTheme(
           textTheme: ThemeData.light().textTheme.copyWith(
             title: TextStyle(
               fontFamily: 'GentiumBookBasic',
               fontSize:25,
-              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 227, 206, 181),
             )
           )
         ),
-        cardColor: Colors.red[800],
       ),
       home: MenuPrincipal(),
     );
