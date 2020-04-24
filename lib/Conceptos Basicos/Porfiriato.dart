@@ -27,7 +27,7 @@ class Porfiriato extends StatelessWidget {
                           width: (MediaQuery.of(context).size.width) * 0.90,
                           child: Image.asset(
                             'images/Conceptos/porfiriato.jpg',
-                            fit: BoxFit.fill,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),)
                     ],
@@ -35,7 +35,8 @@ class Porfiriato extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child:const Text(
-                      '''Se conoce como el porfiriato o porfirismo a un período en la historia política de México durante el cual la nación estuvo bajo el control férreo y autoritario del militar oaxaqueño José de la Cruz Porfirio Díaz Mori (1830-1915).
+                      '''
+Se conoce como el porfiriato o porfirismo a un período en la historia política de México durante el cual la nación estuvo bajo el control férreo y autoritario del militar oaxaqueño José de la Cruz Porfirio Díaz Mori (1830-1915).
 
 Dicho período fue clave en el devenir histórico mexicano, especialmente como preludio a la célebre Revolución Mexicana, y duró entre el 28 de noviembre de 1876 y el 25 de mayo de 1911: fechas en que el caudillo Porfirio Díaz inició su primer mandato presidencial y en que abandonó el poder huyendo hacia Francia, respectivamente.
 

@@ -29,7 +29,7 @@ class FranciscoVilla extends StatelessWidget {
                           width: (MediaQuery.of(context).size.width) * 0.40,
                           child: Image.asset(
                             'images/Personajes/Francisco_villa.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),

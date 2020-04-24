@@ -29,7 +29,7 @@ class FranciscoIMadero extends StatelessWidget {
                           width: (MediaQuery.of(context).size.width) * 0.40,
                           child: Image.asset(
                             'images/Personajes/Madero.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),
@@ -54,12 +54,12 @@ Desde 1905 fue opositor a la dictadura de Porfirio Díaz. En 1909 fundó el Part
                       '''Poco después Porfirio Díaz renunció y huyó a Europa. Francisco Madero tomó el poder y gobernó hasta febrero de 1913. En este periodo implantó el sufragio popular y prohibió la reelección presidencial. Pero los campesinos exigían reformas económicas, y se sublevaron con Emiliano Zapata y Pancho Villa. 
                       
 Mientras tanto, los hacendados apoyaron a Victoriano Huerta, quien le dio un golpe de estado y ordenó su asesinato. Murió a balazos el 22 de febrero de 1913, en Ciudad de México.
-
-
-                 DATOS CURIOSOS DE FRANCISCO I. MADERO''',
+''',
                       style: TextStyle(fontSize: 14),
                     ),
                   ),
+                  Text('DATOS CURIOSOS DE FRANCISCO I. MADERO', style: TextStyle(fontSize:14),textAlign: TextAlign.center,),
+                  Text('   '),
                   ChewieListitem(videoPlayerController: VideoPlayerController.asset('videos/madero.mp4'))
                 ],
             ),

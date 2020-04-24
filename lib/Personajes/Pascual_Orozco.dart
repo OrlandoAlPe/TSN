@@ -27,7 +27,7 @@ class PascualOrozco extends StatelessWidget {
                           width: (MediaQuery.of(context).size.width) * 0.40,
                           child: Image.asset(
                             'images/Personajes/pascual.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),

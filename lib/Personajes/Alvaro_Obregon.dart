@@ -27,7 +27,7 @@ class AlvaroObregon extends StatelessWidget {
                           width: (MediaQuery.of(context).size.width) * 0.40,
                           child: Image.asset(
                             'images/Personajes/Obregon.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
@@ -51,15 +51,27 @@ En 1914, Obregón derrotó a Pancho Villa y fue nombrado Ministro de Guerra por 
                     child: const Text(
                       '''Entre 1920 y 1924 fue Presidente de México. Su gobierno continuó la pacificación del país e inició el reparto de tierras.
 
-En 1924 terminó su periodo y se retiró a Sonora. En 1928 postuló y ganó la presidencia nuevamente. Pero antes de asumir el mando, un fanático católico lo asesinó a balazos en un restaurante de Ciudad de México.
-
-                                  EL MANCO DE CELAYA
-                          
-En la batalla de Celaya un julio de 1905 es donde el Gral. Álvaro Obregón perdió su brazo derecho, después de esa pérdida intento  suicidarse. Unos dicen que la pistola no tenía cartucho y otros que fue su misma gente que lo impidió, pero de ese momento el Gral. Obregón fue conocido como “el manco de Celaya”.''',
+En 1924 terminó su periodo y se retiró a Sonora. En 1928 postuló y ganó la presidencia nuevamente. Pero antes de asumir el mando, un fanático católico lo asesinó a balazos en un restaurante de Ciudad de México.''',
                       style: TextStyle(fontSize: 14),
                     ),
                   ),
-                  Image.asset('images/Personajes/aomanco.jpg')
+                   Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: const Text(
+                      'El manco de Celaya',
+                      style: TextStyle(fontSize: 14),textAlign: TextAlign.center,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: const Text(
+                      '''En la batalla de Celaya un julio de 1905 es donde el Gral. Álvaro Obregón perdió su brazo derecho, después de esa pérdida intento  suicidarse. Unos dicen que la pistola no tenía cartucho y otros que fue su misma gente que lo impidió, pero de ese momento el Gral. Obregón fue conocido como “el manco de Celaya”.
+                      ''',
+                      style: TextStyle(fontSize: 14),
+                    ),
+                  ),
+                  Image.asset('images/Personajes/aomanco.jpg'),
+                  Text('')
                 ],
               ),
             ),

@@ -24,7 +24,7 @@ class GolpeDeEstado extends StatelessWidget {
                           height: (MediaQuery.of(context).size.height) * 0.33,
                           child: Image.asset(
                             'images/Conceptos/golpedestado.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),
@@ -52,7 +52,7 @@ Al conjugar las definiciones de ambos términos surge la noción de golpe de Est
                           width: (MediaQuery.of(context).size.width) * 0.9,
                           child: Image.asset(
                             'images/Conceptos/golpe2.jpg',
-                            fit: BoxFit.fill,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),

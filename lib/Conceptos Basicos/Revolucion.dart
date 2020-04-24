@@ -24,7 +24,7 @@ class Revolucion extends StatelessWidget {
                           height: (MediaQuery.of(context).size.height) * 0.33,
                           child: Image.asset(
                             'images/Conceptos/revolucion.jpg',
-                            fit: BoxFit.contain,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),
@@ -44,7 +44,7 @@ Los cambios revolucionarios tienen consecuencias trascendentales y suelen percib
                           width: (MediaQuery.of(context).size.width) * 0.90,
                           child: Image.asset(
                             'images/Conceptos/revo2.jpg',
-                            fit: BoxFit.fill,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                   ),

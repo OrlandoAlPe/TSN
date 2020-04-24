@@ -27,7 +27,7 @@ class Terratenientes extends StatelessWidget {
                           width: (MediaQuery.of(context).size.width) * 0.9,
                           child: Image.asset(
                             'images/Conceptos/terrateniente.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),
@@ -49,7 +49,7 @@ En principio un terrateniente no es más que el propietario de unas tierras. Sin
                           width: (MediaQuery.of(context).size.width) * 0.9,
                           child: Image.asset(
                             'images/Conceptos/terra2.jpg',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.scaleDown,
                           ),
                         ),
                       ),

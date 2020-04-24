@@ -4,6 +4,7 @@ import 'package:video_player/video_player.dart';
 class VictorianoHuerta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Orientation orientation = MediaQuery.of(context).orientation;
     return Scaffold(
         appBar: AppBar(
           title: const Text('Victoriano Huerta'),
@@ -22,16 +23,31 @@ class VictorianoHuerta extends StatelessWidget {
                   ),
                   Row(
                     children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(
-                          height: (MediaQuery.of(context).size.height) * 0.33,
-                          width: (MediaQuery.of(context).size.width) * 0.40,
-                          child: Image.asset(
-                            'images/Personajes/Huerta.jpg',
-                            fit: BoxFit.cover,
+                      Container(
+                        child: (orientation == Orientation.landscape)?
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            height: (MediaQuery.of(context).size.height) * 0.33,
+                            width: (MediaQuery.of(context).size.width) * 0.40,
+                            child: Image.asset(
+                              'images/Personajes/Huerta.jpg',
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                        )
+                        :Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            height: (MediaQuery.of(context).size.height) * 0.33,
+                            width: (MediaQuery.of(context).size.width) * 0.40,
+                            child: Image.asset(
+                              'images/Personajes/Huerta.jpg',
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
+                        
                       ),
                       Flexible(
                           child: Padding(

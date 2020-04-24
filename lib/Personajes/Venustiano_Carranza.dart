@@ -30,7 +30,7 @@ class VenustianoCarranza extends StatelessWidget {
                         width: (MediaQuery.of(context).size.width) * 0.40,
                         child: Image.asset(
                           'images/Personajes/Carranza.jpg',
-                          fit: BoxFit.fill,
+                          fit: BoxFit.contain,
                         ),
                       ),
                     ),
