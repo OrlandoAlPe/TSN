@@ -146,7 +146,7 @@ class MenuConceptos extends StatelessWidget {
                                   shape: BeveledRectangleBorder(
                                       borderRadius:
                                           new BorderRadius.circular(15)),
-                                  child: const Text('Revolucón',
+                                  child: const Text('Revolución',
                                       style: TextStyle(
                                           fontSize: 22,
                                           color: Color.fromARGB(

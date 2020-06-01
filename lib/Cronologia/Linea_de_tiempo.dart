@@ -684,7 +684,7 @@ Entre sus normas fundamentales, pueden mencionarse las siguientes:
 
 •	El Artículo 24 estableció la libertad de creencias. 
 
-•	El Artículo 39 consagró el principio de la soberanía nacional..
+•	El Artículo 39 consagró el principio de la soberanía nacional.
 
 •	El Artículo 115 puso las bases del municipio libre.
 
