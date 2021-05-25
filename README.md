@@ -1,6 +1,11 @@
 # tsnf
 
-A new Flutter project.
+Thesis Proyect.
+In this proect, I built a mobile application with the objective of
+making easier to study the mexican revolution to middleSchool students.
+I approached this problem with a User centered metodology.
+After some positive real user feedBack this project allowed me to recive
+my Software Engineering degree.
 
 ## Getting Started
 
